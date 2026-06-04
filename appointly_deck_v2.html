@@ -174,7 +174,8 @@
 
   /* proof cards */
   .proofs{display:flex;gap:18px;margin-top:8px;width:100%;max-width:1060px}
-  .pcard{flex:1;border:1px solid var(--line);border-radius:18px;padding:24px;background:#fff;display:flex;flex-direction:column;gap:12px}
+  .pcard{flex:1;border:1px solid var(--line);border-radius:18px;padding:24px;background:#fff;display:flex;flex-direction:column;gap:12px;overflow:hidden}
+  .pcard .photo{margin:-24px -24px 2px;width:calc(100% + 48px);aspect-ratio:3/2;object-fit:cover;display:block;background:#f5f5f5}
   .pcard .who{font-size:15px;font-weight:700;letter-spacing:-.01em}
   .pcard .where{font-size:12px;color:var(--ink-4);margin-top:-8px}
   .pcard .pstat{font-size:15px;font-weight:600;color:#0f766e;background:#ecfdf5;border-radius:8px;padding:8px 12px;align-self:flex-start}
@@ -350,18 +351,21 @@
               <h2>It worked.</h2>
               <div class="proofs">
                 <div class="pcard">
+                  <img class="photo" src="assets/mark.webp" alt="Mark T. of AFAB Services" loading="lazy" />
                   <div class="who">Mark T. &middot; AFAB Services</div>
                   <div class="where">Port St. Lucie, FL</div>
                   <div class="pstat">$__k job, closed on 2nd appointment</div>
                   <div class="quote">"You've already paved the ground. I just go in and sweep it up. You guys are doing a great job."</div>
                 </div>
                 <div class="pcard">
+                  <img class="photo" src="assets/andre.webp" alt="Andre S." loading="lazy" />
                   <div class="who">Andre S.</div>
                   <div class="where">Chicago, IL</div>
                   <div class="pstat">8 new jobs in his second month</div>
                   <div class="quote">"The appointments were already warmed up. I just showed up and closed."</div>
                 </div>
                 <div class="pcard">
+                  <img class="photo" src="assets/carlos.webp" alt="Carlos V. and team" loading="lazy" />
                   <div class="who">Carlos V.</div>
                   <div class="where">Portland, OR</div>
                   <div class="pstat">1st appt closed, covered full onboarding cost</div>
